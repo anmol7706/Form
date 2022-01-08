@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Ubuntu:wght@400;500&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: rgba(0 , 0 , 0 , .8);
+}
+h1{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-family: "Poppins" , sans-serif;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: lightgray;
+}
+#main label{
+    font-size: 600;
+    font-family: "Poppins" , sans-serif;
+    color: coral;
+    font-size: 25px;
+}
+input{
+    margin-left: 40px ;
+}
+#main button{
+    grid-area: span 1 / span 2;
+}
+
+#name.bordergreen{
+    border: 3px solid green;
+}
+
+#name.borderred{
+    border: 3px solid red;
+}
+
+#email.bordergreen{
+    border: 3px solid green;
+}
+
+#email.borderred{
+    border: 3px solid red;
+}
+
+.password.borderred{
+    border: 3px solid red;
+}
+
+.password.bordergreen{
+    border: 3px solid green;
+}
+
+#submit_heading{
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 60px;
+    transition: all .3s ease;
+    font-family: "Poppins" , sans-serif;
+    font-weight: 700;
+}
+
+#submit_heading:hover{
+    color: lightcoral;
+}
+#second_div{
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+    font-weight: 500;
+    font-family: "Ubuntu" , sans-serif;
+}
+#second_div:hover{
+    color: coral;
+}
+#resubmit{
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+    color: crimson;
+    width: 180px;
+    height: 40px;
+    position: relative;
+    bottom: 22px;
+    transition: all .4s ease;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: "Poppins" , sans-serif;
+    border: 1px solid crimson;
+}
+
+#resubmit:hover{
+    color: white;
+    background: crimson;
+    border: 1px solid white;
+}
+
+#second_screen{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0 , 0 , 0 , .8);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    flex-direction: column;
+
+}
+
+#second_screen.show{
+    display: flex;
+}
+
+
+
+
+
