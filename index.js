@@ -37,12 +37,22 @@ function checkmail(mail_para) {
 }
 
 function checkpass(pass1_para , pass2_para){
-   if(pass1_para.value == pass2_para.value && (pass1_para.value && pass2_para.value) != ""){
+    let x = pass1_para.value.length;
+    let y = pass2_para.value.length;
+   if(pass1_para.value == pass2_para.value && (pass1_para.value && pass2_para.value) != "" && (x && y) >= 10){
     pass1_para.classList.remove("borderred");
     pass1_para.classList.add("bordergreen");
     pass2_para.classList.add("bordergreen");
     pass2_para.classList.remove("borderred");
     return 1;
+   }
+   else if(pass1_para.value == pass2_para.value && (x||y) <10){
+    pass1_para.classList.remove("bordergreen");
+    pass1_para.classList.add("borderred");
+    pass2_para.classList.add("borderred");
+    pass2_para.classList.remove("bordergreen");
+       alert("The Password Must Be Of 10 Characters");
+       return 0;
    }
    else if((pass1_para.value && pass2_para.value) == ""){
     pass1_para.classList.remove("bordergreen");
